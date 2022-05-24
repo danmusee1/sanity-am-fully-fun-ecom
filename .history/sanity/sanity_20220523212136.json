@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "q96a1hzf",
+    "dataset": "production",
+    "token":"skib5Kprpmg8hBA1rhJmjuHAbOApJwKVn209eiCRPVZmPjxSRd8X9vZLqcfMvmSHO6yNfiaA7RMer3ma8MQFEcH3AuJNAMfIabRVjmE98WOx77V9uXgjpwG0xHJDHLVx29SZv25HeFMzswR67YBCmPKTRs7xcEwRwvn39q2K02Co124UneDk"
+  },
+  "project": {
+    "name": "sanity-amazona"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
